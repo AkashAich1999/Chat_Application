@@ -95,3 +95,13 @@ export const Login = async (req,res) => {
         console.log(error);
     }
 };
+
+export const Logout = (req,res) => {
+    try {
+        return res.status(200).cookie("token", "", {maxAge:0}).json({
+            message:"Logged Out Successfully."
+        });
+    } catch (error) {
+        console.log(error);
+    }
+};
