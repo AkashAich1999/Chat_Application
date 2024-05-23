@@ -44,7 +44,7 @@ const Signup = () => {
             <input
               className="w-full input input-bordered h-10"
               type="password"
-              placeholder="Password"
+              placeholder="Confirm Password"
             />
           </div>
           <div className="flex items-center my-4">
@@ -58,7 +58,7 @@ const Signup = () => {
             </div>
           </div>
           <p className="text-center">
-            Already have an Account ? <Link to="/login">Login!</Link>
+            Already have an Account ? <Link to="/login">Login</Link>
           </p>
           <div>
             <button className="btn btn-block btn-sm mt-2 border border-slate-700">
