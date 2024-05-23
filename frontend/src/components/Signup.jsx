@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -10,46 +11,64 @@ const Signup = () => {
             <label className="label p-2">
               <span className="text-base label-text">Full Name</span>
             </label>
-            <input 
+            <input
               className="w-full input input-bordered h-10"
               type="text"
-              placeholder="Fullname"  
+              placeholder="Fullname"
             />
           </div>
           <div>
             <label className="label p-2">
               <span className="text-base label-text">User Name</span>
             </label>
-            <input 
+            <input
               className="w-full input input-bordered h-10"
               type="text"
-              placeholder="Username"  
+              placeholder="Username"
             />
           </div>
           <div>
             <label className="label p-2">
               <span className="text-base label-text">Password</span>
             </label>
-            <input 
+            <input
               className="w-full input input-bordered h-10"
               type="password"
-              placeholder="Password"  
+              placeholder="Password"
             />
           </div>
           <div>
             <label className="label p-2">
               <span className="text-base label-text">Confirm Password</span>
             </label>
-            <input 
+            <input
               className="w-full input input-bordered h-10"
               type="password"
-              placeholder="Password"  
+              placeholder="Password"
             />
+          </div>
+          <div className="flex items-center my-4">
+            <div className="flex items-center">
+              <p>Male:</p>
+              <input type="checkbox" defaultChecked className="checkbox mx-2" />
+            </div>
+            <div className="flex items-center">
+              <p>Female:</p>
+              <input type="checkbox" defaultChecked className="checkbox mx-2" />
+            </div>
+          </div>
+          <p className="text-center">
+            Already have an Account ? <Link to="/login">Login!</Link>
+          </p>
+          <div>
+            <button className="btn btn-block btn-sm mt-2 border border-slate-700">
+              Sign Up
+            </button>
           </div>
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Signup;
